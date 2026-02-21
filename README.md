@@ -1,3 +1,5 @@
+[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
+
 # VexTab
 
 Preview and export VexTab guitar tabs (powered by VexFlow) with cursor highlighting and more.
