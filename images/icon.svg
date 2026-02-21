@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Music note">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b3d91"/>
+      <stop offset="1" stop-color="#00a896"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.35 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="8" y="8" width="112" height="112" rx="24" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)" fill="#ffffff">
+    <path d="M78 28c2.2 0 4 1.8 4 4v54.1c0 10-8.1 18.1-18.1 18.1S46 96.1 46 86.1 54.1 68 64.1 68c4.6 0 8.8 1.7 12 4.6V48.4l-28.6 6.6c-2.1.5-4.3-.8-4.8-2.9s.8-4.3 2.9-4.8l34-7.8c.3-.1.6-.1.9-.1z"/>
+    <path d="M82 33.5 100 30c2.2-.4 4.3 1 4.7 3.2.4 2.2-1 4.3-3.2 4.7L82 41.7z" opacity="0.95"/>
+  </g>
+</svg>

@@ -1,0 +1,77 @@
+{
+  "name": "vextab",
+  "displayName": "VexTab",
+  "description": "Vextab (guitar tab) preview and export",
+  "version": "0.0.2",
+  "publisher": "MicoPapp",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmamico/vscode-vextab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmamico/vscode-vextab/issues"
+  },
+  "icon": "images/icon.png",
+  "keywords": [
+    "guitar",
+    "tab",
+    "vextab",
+    "vexflow",
+    "music",
+    "sheet"
+  ],
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:vextab.preview",
+    "onCommand:vextab.exportPdf"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vextab.preview",
+        "title": "Open VexTab Preview"
+      },
+      {
+        "command": "vextab.exportPdf",
+        "title": "Export VexTab to PDF"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p tsconfig.extension.json --outDir out",
+    "watch-tests": "tsc -p tsconfig.extension.json -w --outDir out",
+    "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.109.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/pdfkit": "^0.17.0",
+    "typescript-eslint": "^8.54.0",
+    "eslint": "^9.39.2",
+    "typescript": "^5.9.3",
+    "ts-loader": "^9.5.4",
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  },
+  "dependencies": {
+    "pdfkit": "^0.17.2",
+    "svg-to-pdfkit": "^0.1.8",
+    "vextab": "github:pmamico/vextab#master"
+  }
+}
