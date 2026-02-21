@@ -2,12 +2,12 @@
 
 Preview and export VexTab guitar tabs (powered by VexFlow) with cursor highlighting and more.
 
-![vscode demo](images/example.jpg "VSCode plugin")
+![vscode demo](https://raw.githubusercontent.com/pmamico/vscode-vextab/refs/heads/main/images/example.jpg "VSCode plugin")
 
 ## Features
 
 - Live preview for `.vt`, `.vextab`, and `.tab` files
-- Export the current document to a PDF (via a Save dialog)
+- Export the current document to a PDF
 
 This extension is built on a fork of the upstream VexTab 4.0 project, with additional parser/editor-focused features:
 
@@ -40,6 +40,9 @@ sidenote capo 2 - swing
 
 tabstave notation=true tablature=true time=4/4 key=A
 notes :8 5/6 7/6 8/6 7/6 | :q 5/6
+
+tabstave notation=true tablature=true time=4/4 key=A
+notes :8 5/6 7/6 8/6 7/6 | :q 5/6
 ```
 
 ```vextab
@@ -49,6 +52,8 @@ subtitle (lead sheet excerpt)
 sidenote capo 2 - swing
 
 notation=true tablature=true time=4/4 key=A
+notes :8 5/6 7/6 8/6 7/6 | :q 5/6
+
 notes :8 5/6 7/6 8/6 7/6 | :q 5/6
 ```
 
@@ -60,15 +65,15 @@ notes :8 5/6 7/6 8/6 7/6 | :q 5/6
 
 ## About VexTab
 
-VexTab is a language that allows you to create, edit, and share music notation and guitar tablature. Unlike ASCII tab (optimized for readability), VexTab is optimized for writeability.
+VexTab is a language that allows you to create, edit, and share music notation and guitar tablature. Unlike ASCII tab (optimized for readability), VexTab is optimized for writeability.  
 
-- Tutorial: http://vexflow.com/vextab/tutorial.html
+- Tutorial: http://vexflow.com/vextab/tutorial.html. 
 
 ## Issues
 
-Report bugs and feature requests here:  
-https://github.com/pmamico/vscode-vextab/issues
+Report bugs and feature requests here:   
+https://github.com/pmamico/vscode-vextab/issues.  
 
 ## Credits
 
-VexTab 4.0: A VexTab Parser for VexFlow.  
+VexTab 4.0: A VexTab Parser for VexFlow.   
