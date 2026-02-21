@@ -6,6 +6,10 @@ Preview and export VexTab guitar tabs (powered by VexFlow) with cursor highlight
 
 ![vscode demo](https://raw.githubusercontent.com/pmamico/vscode-vextab/refs/heads/main/images/example.jpg "VSCode plugin")
 
+## Install
+
+[https://marketplace.visualstudio.com/items?itemName=MicoPapp.vextab]()
+
 ## Features
 
 - Live preview for `.vt`, `.vextab`, and `.tab` files
