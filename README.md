@@ -8,7 +8,7 @@ Preview and export VexTab guitar tabs (powered by VexFlow) with cursor highlight
 
 ## Install
 
-[https://marketplace.visualstudio.com/items?itemName=MicoPapp.vextab]()
+[https://marketplace.visualstudio.com/items?itemName=MicoPapp.vextab](https://marketplace.visualstudio.com/items?itemName=MicoPapp.vextab)
 
 ## Features
 
